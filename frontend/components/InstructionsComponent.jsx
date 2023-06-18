@@ -1,5 +1,7 @@
 import styles from "../styles/InstructionsComponent.module.css";
 import Router, { useRouter } from "next/router";
+import Link from "next/link";
+
 export default function InstructionsComponent() {
 	const router = useRouter();
 	return (
@@ -46,6 +48,18 @@ export default function InstructionsComponent() {
 						<p>Visit Docs</p>
 					</div>
 				</a>
+				<Link
+					href={"send-message"}
+				>
+					<div className={styles.button}>
+						<img
+							src="https://static.alchemyapi.io/images/cw3d/Icon%20Large/file-eye-01-l.svg"
+							width={"20px"}
+							height={"20px"}
+						/>
+						<p>Send Message</p>
+					</div>
+				</Link>
 			</div>
 			<div className={styles.footer}>
 				<div className={styles.icons_container}>
