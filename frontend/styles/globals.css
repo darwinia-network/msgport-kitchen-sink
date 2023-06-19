@@ -36,3 +36,23 @@ a {
 	html {
 	}
 }
+
+.fade-dropdown-enter {
+  transform: scaleY(0);
+}
+
+.fade-dropdown-enter-active {
+  transform-origin: top;
+  transform: scaleY(1);
+  transition: transform 150ms;
+}
+
+.fade-dropdown-exit {
+  transform: scaleY(1);
+}
+
+.fade-dropdown-exit-active {
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 150ms;
+}
